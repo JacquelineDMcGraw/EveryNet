@@ -1,3 +1,4 @@
+
 <h1 align="center" >:globe_with_meridians: EveryNet</h1>
 
 <p>EveryNet is a decentralized peer-to-peer network enabling global data sharing and communication. Leveraging mobile devices and a unique overlay network, EveryNet aims to provide a low-cost and accessible solution for data sharing and APIs.</p>
