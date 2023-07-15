@@ -59,4 +59,25 @@ DesktopApp/everynet_desktop/ios/Flutter/flutter_export_environment.sh
 DesktopApp/everynet_desktop/ios/Flutter/Generated.xcconfig
 DesktopApp/everynet_desktop/ios/Runner/GeneratedPluginRegistrant.*
 
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Backup files
+*~
+*.bak
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Database files
+*.sqlite
+
+# Log files
+*.log
+
 # End of .gitignore
