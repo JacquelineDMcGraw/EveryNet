@@ -11,6 +11,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Set Git Identity
+        run: |
+          git config --global user.email "jdm9105@g.rit.edu"
+          git config --global user.name "Jackie Tancredi"
+
       - name: Remove files and directories
         run: |
           rm -rf node_modules/
