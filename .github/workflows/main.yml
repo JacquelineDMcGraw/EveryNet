@@ -1,0 +1,37 @@
+name: Remove Ignored Files
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Remove files and directories
+        run: |
+          rm -rf node_modules/
+          rm -rf .vscode/
+          rm -rf .idea/
+          rm -rf **/doc/api/
+          rm -rf .dart_tool/
+          rm -rf .flutter-plugins
+          rm -rf .pub-cache/
+          rm -rf .pub/
+          rm -rf /build/
+          rm -rf DesktopApp/everynet_desktop/.dart_tool/
+          rm -rf DesktopApp/everynet_desktop/.flutter-plugins
+          rm -rf DesktopApp/everynet_desktop/.flutter-plugins-dependencies
+          rm -rf DesktopApp/everynet_desktop/.packages
+          rm -rf DesktopApp/everynet_desktop/build/
+          rm -rf DesktopApp/everynet_desktop/macos/Flutter/ephemeral/
+          rm -rf DesktopApp/everynet_desktop/android/.gradle
+          rm -rf DesktopApp/everynet_desktop/ios/Flutter/App.framework
+          rm -rf DesktopApp/everynet_desktop/ios/Flutter/Flutter.framework
+          rm -rf DesktopApp/everynet_desktop/ios/Flutter/flutter_assets/
+          rm -rf __pycache__/
+          git add .
+          git commit -m "Remove ignored files"
